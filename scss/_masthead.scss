@@ -1,9 +1,11 @@
 .masthead {
     background-image: url("../images/angelina-andreas-jungleruins\ 1.svg");
     background-repeat: no-repeat;
-    width: 100vw;
-    height: calc(100vw * 320 / 633);
-    // background-size: cover;
+    width: 320px;
+    height:  650px;
+    min-width: 100%;
+    background-size: cover;
+    padding-bottom: 30px;
 }
 
 .lang {
@@ -12,4 +14,38 @@
     flex-direction: row;
     top: 0;
     left: 100%;
+}
+
+.logo {
+    margin-inline-start: 15px;
+    padding-top: 10px;
+}
+
+
+.start-play {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.experience-new-game {
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-heading {
+    padding-top: 30%;
+}
+
+.choices {
+    background-image: url(../images/scroll-down.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding-bottom: 43px;
 }
