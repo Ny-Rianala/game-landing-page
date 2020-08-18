@@ -1,0 +1,15 @@
+.masthead {
+    background-image: url("../images/angelina-andreas-jungleruins\ 1.svg");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: calc(100vw * 320 / 633);
+    // background-size: cover;
+}
+
+.lang {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 100%;
+}

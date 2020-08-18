@@ -1,0 +1,29 @@
+body {
+  font-family: "open sans";
+  font-size: 16px; }
+
+p {
+  color: #ffffff; }
+
+.masthead {
+  background-image: url("../images/angelina-andreas-jungleruins 1.svg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: calc(100vw * 320 / 633); }
+
+.lang {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 100%; }
+
+.order {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 48px;
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  padding-bottom: 2px; }
