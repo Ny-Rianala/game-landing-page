@@ -1,0 +1,30 @@
+.game-information {
+    padding-bottom: 113%;
+    width: 11%;
+    height: 15%;
+}
+
+.slide-image {
+    position: relative;
+    padding: 0;
+}
+
+.first-img {
+    position: absolute;
+    z-index: 3;
+    // overflow: hidden;
+  }
+
+.scd-img {
+    position: absolute;
+    z-index: 2;
+    left: .5rem;
+    top: .5rem;
+  }
+
+.third-img {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 1rem;
+  }
