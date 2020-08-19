@@ -1,15 +1,27 @@
 body {
   font-family: "open sans";
-  font-size: 16px; }
+  font-size: 16px;
+  margin: auto;
+  background-color: #110202; }
 
 p {
+  color: #ffffff; }
+
+a {
+  list-style: none;
+  text-decoration: none; }
+
+h1, h2, h3, h4, p, summary {
   color: #ffffff; }
 
 .masthead {
   background-image: url("../images/angelina-andreas-jungleruins 1.svg");
   background-repeat: no-repeat;
-  width: 100vw;
-  height: calc(100vw * 320 / 633); }
+  width: 320px;
+  height: 650px;
+  min-width: 100%;
+  background-size: cover;
+  padding-bottom: 30px; }
 
 .lang {
   position: absolute;
@@ -18,12 +30,74 @@ p {
   top: 0;
   left: 100%; }
 
+.logo {
+  margin-inline-start: 15px;
+  padding-top: 10px; }
+
+.start-play {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.experience-new-game {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.main-heading {
+  padding-top: 30%; }
+
+.choices {
+  background-image: url(../images/scroll-down.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding-bottom: 43px; }
+
 .order {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: 256px; }
+
+button {
   width: 200px;
   height: 48px;
   background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
-  padding-bottom: 2px; }
+  padding-bottom: 2px;
+  border: none;
+  border-radius: .25rem; }
+
+button a {
+  color: black;
+  font-size: bold; }
+
+.game-information {
+  padding-bottom: 113%;
+  width: 11%;
+  height: 15%; }
+
+.slide-image {
+  position: relative;
+  padding: 0; }
+
+.first-img {
+  position: absolute;
+  z-index: 3; }
+
+.scd-img {
+  position: absolute;
+  z-index: 2;
+  left: .5rem;
+  top: .5rem; }
+
+.third-img {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  left: 1rem; }
