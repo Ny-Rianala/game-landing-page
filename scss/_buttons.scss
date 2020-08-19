@@ -3,9 +3,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+   padding-bottom: 256px;
+}
+
+button {
     width: 200px;
     height: 48px;
     background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
-    padding-bottom : 2px;
+    padding-bottom : 2px; 
+    border: none;
+    border-radius: .25rem;
 }
 
+button a {
+    color: black;
+    font-size: bold;
+}
