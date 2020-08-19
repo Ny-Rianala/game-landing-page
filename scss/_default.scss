@@ -1,8 +1,19 @@
 body {
     font-family: "open sans";
     font-size: 16px;
+    margin: auto;
+    background-color: rgb(17, 2, 2);
 }
 
 p {
+    color: #ffffff;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, p,summary {
     color: #ffffff;
 }
