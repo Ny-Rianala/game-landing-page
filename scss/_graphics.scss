@@ -1,0 +1,33 @@
+.graphics {
+    background-image: url(../images/sos-house.png),
+    url(../images/image-shadow-of-table.png);
+    background-repeat: no-repeat;
+}
+
+
+.table {
+    table-layout: auto;
+    width: 100%;
+    margin: 20px auto;
+  }
+  
+  table {
+      table-layout: fixed;
+      color: white;
+      margin-left: 10px;
+  }
+  
+  table tr th {
+    border-collapse: collapse;
+    margin: 0;
+  }
+
+  .table-headings {
+    color: #ffB548;
+  }
+  
+  tr th {
+    border: 1px solid;
+    padding: 10px;
+  }
+

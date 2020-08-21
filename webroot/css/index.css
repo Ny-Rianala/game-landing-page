@@ -69,7 +69,7 @@ h1, h2, h3, h4, p, summary {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-bottom: 256px; }
+  padding-top: 227px; }
 
 button {
   width: 200px;
@@ -125,7 +125,8 @@ button a {
   left: 1rem; }
 
 .features {
-  background-image: url(../images/bg-image-3.svg);
+  background-image: url(../images/bg-image-3.svg), url(../images/bg-image-3-shadow.png);
+  z-index: -1;
   background-repeat: no-repeat;
   width: 100vw;
   height: calc(100vw * 418 / 637);
@@ -146,3 +147,28 @@ button a {
 summary {
   color: #ffB548;
   text-transform: uppercase; }
+
+.graphics {
+  background-image: url(../images/sos-house.png), url(../images/image-shadow-of-table.png);
+  background-repeat: no-repeat; }
+
+.table {
+  table-layout: auto;
+  width: 100%;
+  margin: 20px auto; }
+
+table {
+  table-layout: fixed;
+  color: white;
+  margin-left: 10px; }
+
+table tr th {
+  border-collapse: collapse;
+  margin: 0; }
+
+.table-headings {
+  color: #ffB548; }
+
+tr th {
+  border: 1px solid;
+  padding: 10px; }
