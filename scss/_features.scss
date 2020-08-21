@@ -1,5 +1,7 @@
 .features {
-  background-image: url(../images/bg-image-3.svg);
+  background-image: url(../images/bg-image-3.svg),
+                    url(../images/bg-image-3-shadow.png);
+                    z-index: -1;
   background-repeat: no-repeat;
   width: 100vw;
   height: calc(100vw * 418 / 637);
@@ -25,3 +27,5 @@ summary {
   color: #ffB548;
   text-transform: uppercase;
 }
+
+
