@@ -2,7 +2,7 @@ body {
   font-family: "open sans";
   font-size: 16px;
   margin: auto;
-  background-color: #110202; }
+  background: #080A0B; }
 
 p {
   color: white; }
@@ -68,8 +68,7 @@ h1, h2, h3, h4, p, summary {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  padding-top: 227px; }
+  align-items: center; }
 
 button {
   width: 200px;
@@ -149,8 +148,10 @@ summary {
   text-transform: uppercase; }
 
 .graphics {
-  background-image: url(../images/sos-house.png), url(../images/image-shadow-of-table.png);
-  background-repeat: no-repeat; }
+  background-image: url(../images/sos-house.png);
+  background-repeat: no-repeat;
+  left: 100;
+  bottom: 0; }
 
 .table {
   table-layout: auto;
@@ -172,3 +173,15 @@ table tr th {
 tr th {
   border: 1px solid;
   padding: 10px; }
+
+.site-testimonial {
+  background: #080A0B 99.74%; }
+
+.container {
+  background: rgba(255, 255, 255, 0.08);
+  height: 147px;
+  width: 289px;
+  border-radius: 10px; }
+
+.container li:first-child {
+  color: #FFB548; }
