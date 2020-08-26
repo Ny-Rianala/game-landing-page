@@ -10,15 +10,14 @@ p {
 img {
   max-width: 100%; }
 
-ul > li {
+ul li {
   list-style: none; }
 
 ul a {
-  list-style: none;
   text-decoration: none; }
 
 h1, h2, h3, h4, p, summary {
-  color: #ffffff; }
+  color: white; }
 
 .masthead {
   background-image: url("../images/angelina-andreas-jungleruins 1.svg");
@@ -124,8 +123,7 @@ button a {
   left: 1rem; }
 
 .features {
-  background-image: url(../images/bg-image-3.svg), url(../images/bg-image-3-shadow.png);
-  z-index: -1;
+  background-image: url(../images/bg-image-3.svg);
   background-repeat: no-repeat;
   width: 100vw;
   height: calc(100vw * 418 / 637);
@@ -148,7 +146,7 @@ summary {
   text-transform: uppercase; }
 
 .graphics {
-  background-image: url(../images/sos-house.png);
+  background-image: url(../images/sos-house.png), url(../images/image-shadow-of-table.png);
   background-repeat: no-repeat;
   left: 100;
   bottom: 0; }
@@ -179,9 +177,29 @@ tr th {
 
 .container {
   background: rgba(255, 255, 255, 0.08);
-  height: 147px;
-  width: 289px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-right: 14px;
+  background-image: url(../images/twitter.png);
+  background-repeat: no-repeat;
+  left: 0%;
+  top: 100%; }
 
-.container li:first-child {
-  color: #FFB548; }
+.container .user-name {
+  text-transform: uppercase;
+  font-size: 21px;
+  color: #ffB548; }
+
+.user-job,
+.date {
+  color: #d6d2d2; }
+
+p,
+.date {
+  margin-left: 16px; }
+
+ul .user-name {
+  margin-left: 75px; }
+
+ul .user-job {
+  margin-left: 75px; }
