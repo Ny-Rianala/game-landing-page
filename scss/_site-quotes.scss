@@ -4,14 +4,35 @@
   
   .container {
     background: rgba(255, 255, 255, 0.08);
-    max-height: 147px;
-    max-width: 289px;
     border-radius: 10px;
-    background-image: url(./images/twitter.png);
+    margin-left: 15px;
+    margin-right: 14px;
+    background-image: url(../images/twitter.png);
     background-repeat: no-repeat;
+    left: 0%;
+    top: 100%;
   }
   
 
- .container li:first-child {
-      color: #FFB548;
+ .container .user-name {
+      text-transform: uppercase;
+      font-size: 21px;
+      color: $site-heading-color;
   }
+    .user-job,
+      .date {
+       color: $site-quotes-color;
+  }
+    p,
+    .date {
+      margin-left: 16px;
+    }
+  
+ul {
+      .user-name {
+      margin-left: 75px;
+    }
+  .user-job {
+    margin-left: 75px;
+  }
+}
