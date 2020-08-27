@@ -1,9 +1,18 @@
 .graphics {
-    background-image: url(../images/sos-house.png),
-                   url(../images/image-shadow-of-table.png);
+    background-image: url(../images/sos-house.png);
     background-repeat: no-repeat;
-    left: 100;
-    bottom: 0;
+    padding-top: 65px;
+    padding-bottom: 235px;
+    background-position-x: 80%;
+    left: 52px;
+    background-position-y: 100%;
+    padding-bottom: 235px;
+} .graphics h1 {
+  font-size: 14px;
+  text-align: center;
+} .graphics h2 {
+  font-size: 20px;
+  text-align: center;
 }
 
 
