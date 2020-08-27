@@ -10,11 +10,13 @@
 
 .lang {
     position: absolute;
-    display: flex;
-    flex-direction: row;
-    top: 0;
-    left: 100%;
+    top: 18px;
+    left: 60%;
+    opacity: 0.5;
+    text-transform: uppercase;
+    border: 0.8px solid #FFFFFF;
 }
+
 
 .logo {
     margin-inline-start: 15px;
