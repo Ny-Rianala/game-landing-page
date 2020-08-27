@@ -28,7 +28,7 @@
         <form action="." method="GET">
           <label for="lang_dropdown"></label>
           <select class="lang" name="lang" id="lang_dropdown">
-            <option lang="en" value="en" label="English">
+            <option lang="en" value="en" label="ENG">
             <option lang="ru" value="ru" label="русский">
             <option lang="fr" value="fr" label="Français">
             <option lang="de" value="de" label="Deutsch">
@@ -144,55 +144,62 @@
       </div>
     </article>
     <article class="site-testimonial">
-      <h1>What people think</h1>
-      <h2>Press quotes</h2>
-      <p>Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re
-        constantly working on our services to make it better every day and really listen to what our users has to say.
-      </p>
-      <div class="order">
-        <button>
-          <a href="#">Read more testemonial</a>
-        </button>
+      <div class="site-testimonial-headings">
+          <h1>What people think</h1>
+        <h2>Press quotes</h2>
+        <p>Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re
+          constantly working on our services to make it better every day and really listen to what our users has to say.
+        </p>
+        <div class="order">
+          <button>
+            <a href="#">Read more testemonial</a>
+          </button>
+        </div>
       </div>
       <div>
-        <div class="container">
-          <ul>
+        <div class="container ">
+          <ul class="first-user">
             <li class="user-name">Evan Lahti</li>
             <li class="user-job">PC Gamer</li>
-            <p><q>One of my gaming highlights of the year.</p>
+            <p  class="users-quote"><q>One of my gaming highlights of the year.</p>
             <li class="date">October 18, 2018</li>
           </ul>
         </div>
         <div class="container">
-          <div>
-            <ul>
-              <li class="user-name">Jada Griffin </li>
-              <li class="user-job">Nerdreactor</li>
-              <p><q>The next big thing in the world of streaming and survival games.</p>
-              <li class="date">December 21, 2018</li>
-              </ul>
-          </div>
+          <ul class="scd-user">
+            <li class="user-name">Jada Griffin </li>
+            <li class="user-job">Nerdreactor</li>
+            <p  class="users-quote"><q>The next big thing in the world of streaming and survival games.</p>
+            <li class="date">December 21, 2018</li>
+          </ul>
         </div>
         <div>
           <div class="container">
-            <ul>
+            <ul class="third-user">
               <li class="user-name">Aaron Williams</li>
               <li class="user-job">Uproxx</li>
-              <p><q>Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.</p>
+              <p  class="users-quote"><q>Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.</p>
               <li class="date">December 24, 2018</li>
               </ul>
+            </div>
           </div>
+          <ul>
+            <li><a class="twitter" href="#"></a></li>
+          </ul>
+          
         </div>
     </article>
-    <article>
-      <h1>Want to stay in touch?</h1>
-      <ul>
-        <li>NewsLetter</li>
-        <li>Subscribe</li>
-      </ul>
-      <p>In order to start receiving our news, all you have to do is enter your email address. Everything else will be
-        taken care of by us. We will send you emails containing information about game. We don’t spam.</p>
-      <p>Your email address</p>
+    <article class="site-news">
+      <div class="aside">
+          <h1>Want to stay in touch?</h1>
+        <ul>
+          <li>NewsLetter</li>
+          <li>Subscribe</li>
+        </ul>
+        <p>In order to start receiving our news, all you have to do is enter your email address. Everything else will be
+          taken care of by us. We will send you emails containing information about game. We don’t spam.</p>
+      </div>
+        <p>Your email address</p>
       <input type="email" name="email" id="email">
       <p>aliciliniavopir@gmail.com</p>
       <div class="order">
@@ -204,18 +211,20 @@
   </main>
   <footer>
     <nav>
-      <ul>
+      <ul class="homepage-site">
         <li><a href="#">Main</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Game features</a></li>
         <li><a href="#">System requirements</a></li>
         <li><a href="#">Quotes</a></li>
       </ul>
-      <ul>
-        <li><a href="https://facebook.com"><span>facebook</span></a></li>
-        <li><a href="https://twitter.com"><span>twitter</span></a></li>
-        <li><a href="https://youTube.com"><span>you-tube</span></a></li>
-        <li><a href="https://messanging.com"><span>messanging</span></a></li>
+      <ul class="share">
+        <li><a class="share facebook" href="https://facebook.com"><svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41481 19.5593H2.32381V10.0653H0.278809V6.79231H2.32381V4.82831C2.32381 2.15931 3.47881 0.570312 6.75681 0.570312H9.48681V3.84331H7.78181C6.50381 3.84331 6.41981 4.30131 6.41981 5.15531L6.41481 6.79231H9.50681L9.14481 10.0653H6.41481V19.5593Z" fill="white"/>
+          </svg></a></li>
+        <li><a class="share twitter" href="https://twitter.com"><span>twitter</span></a></li>
+        <li><a class="share you-tube" href="https://youTube.com"><span>you-tube</span></a></li>
+        <li><a class="share messanging" href="https://messanging.com"><span>messanging</span></a></li>
       </ul>
       <ul>
         <li><a href="#">Privacy policy</a></li>

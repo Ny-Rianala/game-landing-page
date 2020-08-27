@@ -30,10 +30,11 @@ h1, h2, h3, h4, p, summary {
 
 .lang {
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  top: 0;
-  left: 100%; }
+  top: 18px;
+  left: 60%;
+  opacity: 0.5;
+  text-transform: uppercase;
+  border: 0.8px solid #FFFFFF; }
 
 .logo {
   margin-inline-start: 15px;
@@ -67,7 +68,8 @@ h1, h2, h3, h4, p, summary {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 30px; }
 
 button {
   width: 200px;
@@ -146,10 +148,22 @@ summary {
   text-transform: uppercase; }
 
 .graphics {
-  background-image: url(../images/sos-house.png), url(../images/image-shadow-of-table.png);
+  background-image: url(../images/sos-house.png);
   background-repeat: no-repeat;
-  left: 100;
-  bottom: 0; }
+  padding-top: 65px;
+  padding-bottom: 235px;
+  background-position-x: 80%;
+  left: 52px;
+  background-position-y: 100%;
+  padding-bottom: 235px; }
+
+.graphics h1 {
+  font-size: 14px;
+  text-align: center; }
+
+.graphics h2 {
+  font-size: 20px;
+  text-align: center; }
 
 .table {
   table-layout: auto;
@@ -175,6 +189,18 @@ tr th {
 .site-testimonial {
   background: #080A0B 99.74%; }
 
+.site-testimonial-headings {
+  margin-left: 15px; }
+
+h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 16px; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 20px; }
+
 .container {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
@@ -194,7 +220,7 @@ tr th {
 .date {
   color: #d6d2d2; }
 
-p,
+.users-quote,
 .date {
   margin-left: 16px; }
 
@@ -203,3 +229,40 @@ ul .user-name {
 
 ul .user-job {
   margin-left: 75px; }
+
+.first-user {
+  background-image: url(../images/first-user-1.svg);
+  background-repeat: no-repeat;
+  padding-left: 16px;
+  padding-top: 10px; }
+
+.scd-user {
+  background-image: url(../images/second-user.svg);
+  background-repeat: no-repeat;
+  padding-left: 16px;
+  padding-top: 10px; }
+
+.third-user {
+  background-image: url(../images/third-user.svg);
+  background-repeat: no-repeat;
+  padding-left: 16px;
+  padding-top: 10px; }
+
+.site-news {
+  color: white;
+  padding-top: 33px; }
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.homepage-site {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: white; }
+
+.share span {
+  visibility: hidden; }

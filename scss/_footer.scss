@@ -1,0 +1,11 @@
+.homepage-site {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: white;
+}
+
+.share span {
+    visibility: hidden;
+}
