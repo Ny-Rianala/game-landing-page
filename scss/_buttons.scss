@@ -3,7 +3,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+}
+
+.buying-btn {
+    padding-bottom: 256px;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 button {

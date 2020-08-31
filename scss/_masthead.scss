@@ -1,11 +1,10 @@
 .masthead {
-    background-image: url("../images/angelina-andreas-jungleruins\ 1.svg");
+    background-image: url("../images/bg-image-masthead.svg");
     background-repeat: no-repeat;
-    width: 320px;
-    height:  650px;
-    min-width: 100%;
+    width: 100vw;
+    height: calc(100vw * 960 / 1440);
     background-size: cover;
-    padding-bottom: 30px;
+    padding-bottom: 300px;
 }
 
 .lang {
@@ -18,7 +17,7 @@
 }
 
 
-.logo {
+.logo  {
     margin-inline-start: 15px;
     padding-top: 10px;
 }
@@ -42,7 +41,7 @@
 }
 
 .main-heading {
-    padding-top: 30%;
+    padding-top: 179px;
 }
 
 .choices {
@@ -51,3 +50,4 @@
     background-position: bottom left;
     padding-bottom: 43px;
 }
+
