@@ -213,7 +213,7 @@ h2 {
 
 .container .user-name {
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 16px;
   color: #ffB548; }
 
 .user-job,
@@ -250,19 +250,67 @@ ul .user-job {
 
 .site-news {
   color: white;
-  padding-top: 33px; }
+  padding-top: 33px;
+  background-image: url(../images/mayan-raul.svg);
+  background-repeat: no-repeat; }
 
 .aside {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
+  flex-direction: column; }
+
+footer > nav {
+  padding-top: 62px; }
+
+.link-header {
+  top: -30px;
+  left: 88px;
+  position: relative; }
 
 .homepage-site {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-transform: uppercase;
+  padding-left: 0;
+  margin-left: 23px;
+  margin-right: 26px;
+  font-size: 12px;
+  padding-top: 21px;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+ul > li > a {
   color: white; }
 
-.share span {
+span {
   visibility: hidden; }
+
+.share {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 28px;
+  margin: 0; }
+
+.service {
+  border-block-start: solid .25px grey;
+  padding-bottom: 13px;
+  margin-bottom: 0;
+  margin-left: 15px; }
+
+.service p {
+  color: grey;
+  padding-left: 0;
+  font-size: 12px;
+  padding-top: 20px; }
+
+.outpost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  padding-bottom: 62px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-left: 0; }
