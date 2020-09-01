@@ -47,4 +47,14 @@
     left: 1rem;
   }
 
-  
+  @media(min-width: 1114px) {
+    .title-of-games {
+      font-size: 24px;
+      margin-left: 120px;
+    }.big-heading {
+      font-size: 80px;
+      margin-left: 119px;
+    }.more-explanation {
+      margin-left: 307px;
+    }
+  }
