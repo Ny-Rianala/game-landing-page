@@ -25,10 +25,8 @@ h1, h2, h3, h4, p, summary {
 .masthead {
   background-image: url("../images/bg-image-masthead.svg");
   background-repeat: no-repeat;
-  width: 100vw;
-  height: calc(100vw * 960 / 1440);
-  background-size: cover;
-  padding-bottom: 300px; }
+  background-position: 30%;
+  background-size: cover; }
 
 .lang {
   position: absolute;
@@ -57,14 +55,29 @@ h1, h2, h3, h4, p, summary {
   letter-spacing: 2px;
   text-transform: uppercase; }
 
-.main-heading {
-  padding-top: 179px; }
-
 .choices {
   background-image: url(../images/scroll-down.svg);
   background-repeat: no-repeat;
   background-position: bottom left;
   padding-bottom: 43px; }
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: end; }
+
+@media (min-width: 1114px) {
+  .logo {
+    background-repeat: no-repeat;
+    margin-left: 120px;
+    width: 55px;
+    padding-top: 10px; }
+  .start-play {
+    font-size: 80px; }
+  .experience-new-game {
+    font-size: 24px; }
+  .main-heading {
+    padding-top: 534px; } }
 
 .order {
   display: flex;
@@ -132,6 +145,16 @@ button a {
   top: 1rem;
   left: 1rem; }
 
+@media (min-width: 1114px) {
+  .title-of-games {
+    font-size: 24px;
+    margin-left: 120px; }
+  .big-heading {
+    font-size: 80px;
+    margin-left: 119px; }
+  .more-explanation {
+    margin-left: 307px; } }
+
 .features {
   background-image: url(../images/bg-image-3.svg);
   background-repeat: no-repeat;
@@ -155,6 +178,21 @@ summary {
   color: #ffB548;
   text-transform: uppercase; }
 
+@media (min-width: 1114px) {
+  .features-heading {
+    margin-left: 798px; }
+  h3 {
+    font-size: 24px;
+    margin-top: 150px;
+    margin-bottom: 0; }
+  h4 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .features-detail {
+    margin-top: 85px;
+    margin-left: 842px; } }
+
 .graphics {
   background-image: url(../images/sos-house.png);
   background-repeat: no-repeat;
@@ -174,25 +212,24 @@ summary {
   text-align: center; }
 
 .table {
-  table-layout: auto;
-  width: 100%;
-  margin: 20px auto; }
-
-table {
-  table-layout: fixed;
+  display: grid;
   color: white;
-  margin-left: 10px; }
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  border: 1px solid; }
 
-table tr th {
-  border-collapse: collapse;
-  margin: 0; }
-
-.table-headings {
+dt {
   color: #ffB548; }
 
-tr th {
-  border: 1px solid;
-  padding: 10px; }
+@media (min-width: 1114px) {
+  .graphics-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  h1 {
+    font-size: 24px; }
+  h2 {
+    font-size: 50px; } }
 
 .site-testimonial {
   background: #080A0B 99.74%; }
@@ -213,11 +250,19 @@ h2 {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
   margin-left: 15px;
-  margin-right: 14px;
   background-image: url(../images/twitter.png);
   background-repeat: no-repeat;
   left: 0%;
-  top: 100%; }
+  top: 100%;
+  max-width: 290px; }
+
+@media (min-width: 1114px) {
+  .container {
+    max-width: 461px; }
+  h1 {
+    font-size: 24px; }
+  h2 {
+    font-size: 50px; } }
 
 .container .user-name {
   text-transform: uppercase;
@@ -262,9 +307,9 @@ ul .user-job {
   background-image: url(../images/mayan-raul.svg);
   background-repeat: no-repeat; }
 
-.aside {
-  display: flex;
-  flex-direction: column; }
+aside {
+  display: block;
+  float: right; }
 
 footer > nav {
   padding-top: 62px; }
