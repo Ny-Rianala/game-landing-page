@@ -26,3 +26,19 @@ summary {
   text-transform: uppercase;
 }
 
+@media(min-width: 1114px) {
+  .features-heading {
+    margin-left: 798px;
+  } h3 {
+    font-size: 24px;
+    margin-top: 150px;
+    margin-bottom: 0
+  } h4 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }.features-detail {
+    margin-top: 85px;
+    margin-left: 842px;
+  }
+}
