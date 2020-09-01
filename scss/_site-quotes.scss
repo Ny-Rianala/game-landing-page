@@ -17,14 +17,23 @@
     background: rgba(255, 255, 255, 0.08);
     border-radius: 10px;
     margin-left: 15px;
-    margin-right: 14px;
     background-image: url(../images/twitter.png);
     background-repeat: no-repeat;
     left: 0%;
     top: 100%;
+    max-width: 290px;
     
   }
-  
+
+  @media(min-width: 1114px) {
+    .container {
+      max-width: 461px;
+    }h1 {
+      font-size: 24px;
+    }h2 {
+      font-size: 50px;
+    }
+  }
 
  .container .user-name {
       text-transform: uppercase;
