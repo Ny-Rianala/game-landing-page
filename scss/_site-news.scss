@@ -3,9 +3,10 @@
     padding-top: 33px;
     background-image: url(../images/mayan-raul.svg);
     background-repeat: no-repeat;
+    
 }
 
-.aside {
-    display: flex;
-    flex-direction: column;
+aside {
+    display: block;
+    float: right;
 }
