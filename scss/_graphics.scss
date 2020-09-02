@@ -1,11 +1,8 @@
 .graphics {
-    background-image: url(../images/sos-house.png);
+    background-image: url(../images/house-sos.png);
     background-repeat: no-repeat;
-    padding-top: 65px;
-    padding-bottom: 235px;
-    background-position-x: 80%;
-    left: 52px;
-    background-position-y: 100%;
+    background-position: 90%;
+    background-size: cover;
     padding-bottom: 235px;
 } .graphics h1 {
   font-size: 14px;
