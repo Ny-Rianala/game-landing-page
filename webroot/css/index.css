@@ -22,6 +22,9 @@ ul a {
 h1, h2, h3, h4, p, summary {
   color: white; }
 
+summary::-webkit-details-marker {
+  display: none; }
+
 .masthead {
   background-image: url("../images/bg-image-masthead.svg");
   background-repeat: no-repeat;
@@ -73,7 +76,7 @@ h1, h2, h3, h4, p, summary {
     width: 55px;
     padding-top: 10px; }
   .start-play {
-    font-size: 80px; }
+    font-size: 50px; }
   .experience-new-game {
     font-size: 24px; }
   .main-heading {
@@ -107,9 +110,7 @@ button a {
 .game-information {
   position: relative;
   margin-left: 37px;
-  padding-bottom: 113%;
-  width: 11%;
-  height: 15%; }
+  padding-bottom: 113%; }
 
 .big-heading {
   padding-bottom: 40px;
@@ -123,60 +124,85 @@ button a {
   margin-left: 36px;
   margin-right: 14px; }
 
-.slide-image {
-  position: relative;
-  padding: 0; }
-
-.first-img {
-  position: absolute;
-  z-index: 3;
-  width: 225px;
-  height: 273px; }
-
-.scd-img {
-  position: absolute;
-  z-index: 2;
-  left: .5rem;
-  top: .5rem; }
-
-.third-img {
-  position: absolute;
-  z-index: 1;
-  top: 1rem;
-  left: 1rem; }
-
 @media (min-width: 1114px) {
   .title-of-games {
     font-size: 24px;
     margin-left: 120px; }
   .big-heading {
-    font-size: 80px;
+    font-size: 50px;
     margin-left: 119px; }
   .more-explanation {
     margin-left: 307px; } }
 
+.game-information {
+  padding-top: 120% 38px; }
+
+.image-slider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: calc(100% * 273 / 249); }
+
+.image {
+  position: absolute; }
+
+.image:nth-of-type(1) {
+  top: 0;
+  transform-origin: 100% 0%;
+  z-index: 5;
+  padding-top: calc(100% * 24 / 249);
+  right: 0;
+  transform: scale(calc((273 - 48) / 273)); }
+
+.image:nth-last-of-type(2) {
+  z-index: 2;
+  right: 0;
+  left: calc(100% * 24 / 249);
+  transform: scale(1);
+  padding-top: 0; }
+
+.image:nth-of-type(3) {
+  z-index: 3;
+  padding-top: calc(100% * 12 / 249);
+  left: calc(100% * 12 / 249);
+  right: calc(100% * 12 / 249);
+  transform: scale(calc((273 - 24) / 273)); }
+
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
 .features {
   background-image: url(../images/bg-image-3.svg);
   background-repeat: no-repeat;
-  width: 100vw;
-  height: calc(100vw * 418 / 637);
-  background-size: cover; }
-
-.features {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-bottom: 70px; }
+  background-size: cover;
+  padding-bottom: 85px;
+  padding-left: 40%; }
 
 .features-detail {
   margin-right: 24px; }
 
 .features-heading {
-  margin-right: 20px; }
+  margin-right: 20px;
+  margin-left: 116px; }
 
 summary {
   color: #ffB548;
   text-transform: uppercase; }
+
+.features-heading h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 0; }
+
+.features-heading h4 {
+  text-transform: uppercase;
+  font-size: 33px;
+  margin-top: 0; }
 
 @media (min-width: 1114px) {
   .features-heading {
@@ -193,14 +219,30 @@ summary {
     margin-top: 85px;
     margin-left: 842px; } }
 
+.features-detail details {
+  position: relative;
+  padding-left: 20px; }
+
+.features-detail summary::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-sizing: border-box; }
+
+.features-detail details[open] summary::before {
+  background-color: white; }
+
 .graphics {
-  background-image: url(../images/sos-house.png);
+  background-image: url(../images/house-sos.png);
   background-repeat: no-repeat;
-  padding-top: 65px;
-  padding-bottom: 235px;
-  background-position-x: 80%;
-  left: 52px;
-  background-position-y: 100%;
+  background-position: 90%;
+  background-size: cover;
   padding-bottom: 235px; }
 
 .graphics h1 {
@@ -209,14 +251,14 @@ summary {
 
 .graphics h2 {
   font-size: 20px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 60px; }
 
 .table {
   display: grid;
   color: white;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  border: 1px solid; }
+  grid-gap: 1rem; }
 
 dt {
   color: #ffB548; }
@@ -231,8 +273,20 @@ dt {
   h2 {
     font-size: 50px; } }
 
+.row {
+  border: 1px solid white;
+  border-inline-end: 10px;
+  margin-block-start: -17px;
+  padding-left: 9px; }
+
+.row:nth-of-type(1) {
+  margin-inline-end: -17px; }
+
+.row:nth-of-type(5) {
+  grid-column: 1 / 3; }
+
 .site-testimonial {
-  background: #080A0B 99.74%; }
+  background: #080A0B 99%; }
 
 .site-testimonial-headings {
   margin-left: 15px; }
@@ -240,7 +294,8 @@ dt {
 h1 {
   font-size: 16px;
   text-transform: uppercase;
-  line-height: 16px; }
+  line-height: 16px;
+  padding-top: 35px; }
 
 h2 {
   text-transform: uppercase;
@@ -252,17 +307,24 @@ h2 {
   margin-left: 15px;
   background-image: url(../images/twitter.png);
   background-repeat: no-repeat;
-  left: 0%;
-  top: 100%;
-  max-width: 290px; }
+  background-position: 85%;
+  background-position-y: 36%;
+  max-width: 290px;
+  width: 100%;
+  margin: auto; }
 
-@media (min-width: 1114px) {
-  .container {
-    max-width: 461px; }
-  h1 {
-    font-size: 24px; }
-  h2 {
-    font-size: 50px; } }
+.container li:first-child {
+  display: flex;
+  flex-direction: row;
+  position: absolute; }
+
+.user-job:nth-of-type(2) {
+  padding-bottom: 9px; }
+
+.container ul {
+  padding-left: 16px;
+  padding-top: 9px;
+  padding-bottom: 15px; }
 
 .container .user-name {
   text-transform: uppercase;
@@ -283,33 +345,39 @@ ul .user-name {
 ul .user-job {
   margin-left: 75px; }
 
-.first-user {
-  background-image: url(../images/first-user-1.svg);
-  background-repeat: no-repeat;
-  padding-left: 16px;
-  padding-top: 10px; }
-
-.scd-user {
-  background-image: url(../images/second-user.svg);
-  background-repeat: no-repeat;
-  padding-left: 16px;
-  padding-top: 10px; }
-
-.third-user {
-  background-image: url(../images/third-user.svg);
-  background-repeat: no-repeat;
-  padding-left: 16px;
-  padding-top: 10px; }
+@media (min-width: 1114px) {
+  .container {
+    max-width: 461px; }
+  h1 {
+    font-size: 24px; }
+  h2 {
+    font-size: 50px; } }
 
 .site-news {
   color: white;
-  padding-top: 33px;
   background-image: url(../images/mayan-raul.svg);
   background-repeat: no-repeat; }
 
+.site-news h1, p {
+  margin: 0;
+  padding: 0; }
+
 aside {
   display: block;
-  float: right; }
+  float: right;
+  width: 40%;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  float: right;
+  min-width: calc(100% - 37%);
+  background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%); }
+
+aside > p {
+  margin: .5rem; }
+
+aside > ul > li {
+  font-size: 33px;
+  text-transform: uppercase; }
 
 footer > nav {
   padding-top: 62px; }
