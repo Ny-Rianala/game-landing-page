@@ -51,6 +51,9 @@ summary::-webkit-details-marker {
   color: #ffffff;
   text-transform: uppercase; }
 
+.main-heading {
+  padding-top: 240px; }
+
 .experience-new-game {
   font-size: 18px;
   line-height: 18px;
@@ -186,6 +189,9 @@ img {
 .features-detail {
   margin-right: 24px; }
 
+.features-detail li {
+  padding-bottom: 43px; }
+
 .features-heading {
   margin-right: 20px;
   margin-left: 116px; }
@@ -271,7 +277,17 @@ dt {
   h1 {
     font-size: 24px; }
   h2 {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .table {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    max-width: 573px;
+    height: 400px;
+    padding-left: 120px; }
+  dt {
+    color: #ffB548; } }
 
 .row {
   border: 1px solid white;
