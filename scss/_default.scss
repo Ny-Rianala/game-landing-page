@@ -33,3 +33,6 @@ h1, h2, h3, h4, p,summary {
     color: white;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
