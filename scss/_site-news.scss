@@ -1,11 +1,30 @@
 .site-news {
     color: white;
-    padding-top: 33px;
     background-image: url(../images/mayan-raul.svg);
     background-repeat: no-repeat;    
+}
+
+.site-news h1, p {
+    margin: 0;
+    padding: 0;
 }
 
 aside {
     display: block;
     float: right;
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    min-width: calc(100% - 37%);
+    background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+aside > ul >  li {
+    font-size: 33px;
+    text-transform: uppercase;
 }
